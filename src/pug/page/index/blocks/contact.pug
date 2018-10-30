@@ -1,6 +1,8 @@
 .contact_bg#contact
   .contact_block.container
-    h2.title.text-center 聯絡我們
+    h2.title.text-center
+      .cht 聯絡我們
+      .en Contact Us
     p.sub_title.text-center.h3.font-weight-normal 若您對我們公司有興趣或疑問，
       br
       | 歡迎隨時來信聯絡，我們會盡快回覆您。
@@ -34,6 +36,7 @@
              label(for="verification") 驗證碼：
              input#verification(type="text") 
              span.verification_code VIVK
+             span.remark (點選驗證碼可更新)
         .col-12
           .field_wrap
             label#textarea_text.textarea_text(for="textarea") 您的意見：
