@@ -1,6 +1,6 @@
 .contact_bg {
-   background-image: url("../images/home_07_contact_bg.png");
-  background-color: #4E413B;
+  //background-image: url("../images/home_07_contact_bg.png");
+  background-color: #F2F0EC;
   padding:60px 15px;
 }
 .w_80{
@@ -15,14 +15,14 @@ textarea{
 .contact_block{
   // max-width: 1000px;
   // margin:  0 auto;
-  h2.title {
-    color:#fff;
+  h2.block_title {
+    color:#EA5717;
     margin-bottom: 20px;
   }
   p.sub_title{
-    color:#fff;
+    color:#4E413B;
     padding-bottom: 30px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #4E413B;
     margin-bottom: 30px;
   }
   .contact_form{
@@ -31,7 +31,7 @@ textarea{
     input[type="text"],
     textarea{
       background: transparent;
-      color:#fff;
+      color:#4E413B;
     }
     input{
       border:0px;
@@ -42,12 +42,12 @@ textarea{
     }
   }
   .border_b_color {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #4E413B;
   }
   .field_wrap{
 
     margin-bottom: 15px;
-    color:#fff;
+    color:#4E413B;
 
   }
   .textarea_text{
@@ -55,22 +55,22 @@ textarea{
   }
   textarea{
     width: 100%;
-    border:1px solid #fff;
+    border:1px solid #4E413B;
     padding:10px;
   }
   .submit{
-    background-color: #fff;
-    color:#EA5717;
+    background-color: #4E413B;
+    color:#fff;
     padding:5px 15px;
     cursor: pointer;
     transition: all ,0.5s;
     &:hover{
-      color:#fff;
+      color:#4E413B;
       background-color: #EA5717;
     }
   }
   .verification_code{
-       background-color: #EA5717;
+       background-color: #4E413B;
        color: #fff;
        padding: 6px 20px;
        position: absolute;
