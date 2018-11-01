@@ -1,7 +1,8 @@
 .contact_bg {
   //background-image: url("../images/home_07_contact_bg.png");
   background-color: #F2F0EC;
-  padding:60px 15px;
+  padding:0px 15px;
+  padding-top: 115px;
 }
 .w_80{
   width: 80%;
@@ -15,9 +16,29 @@ textarea{
 .contact_block{
   // max-width: 1000px;
   // margin:  0 auto;
-  h2.block_title {
+  .block_title {
     color:#EA5717;
     margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background-color: #EA5717;
+      margin: 15px auto;
+    }
+
+    .cht {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: 7px;
+    }
+
+    .en {
+      font-size: 24px;
+      letter-spacing: 4px;
+    }
   }
   p.sub_title{
     color:#4E413B;
