@@ -1,5 +1,6 @@
 #brand_block {
   padding: 140px 0px;
+  background-color: #F2F0EC;
 
   .brand_wrapper {
     max-width: 1320px;
@@ -78,6 +79,7 @@
       @include font_size_9;
       @include font_color_3;
       letter-spacing: 3px;
+      font-weight: lighter;
     }
   }
 }
