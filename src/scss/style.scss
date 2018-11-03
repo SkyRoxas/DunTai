@@ -11,6 +11,9 @@
 @import "./layouts/default";
 @import "./layouts/first_sidbar";
 
+//mixin
+@import "./mixin";
+
 // components
 @import "./components/header";
 @import "./components/footer";
