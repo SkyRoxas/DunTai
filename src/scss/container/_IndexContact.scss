@@ -42,13 +42,22 @@ textarea{
   }
   p.sub_title{
     color:#4E413B;
-    padding-bottom: 30px;
+    font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 65px;
     border-bottom: 1px solid #4E413B;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .contact_form{
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 0px 120px;
+
+
+    .col-md-6:nth-child(odd){
+      padding-right: 35px;
+    }
+    .col-md-6:nth-child(even){
+      padding-left: 35px;
+    }
     input[type="text"],
     textarea{
       background: transparent;
@@ -66,10 +75,9 @@ textarea{
     border-bottom: 1px solid #4E413B;
   }
   .field_wrap{
-
-    margin-bottom: 15px;
-    color:#4E413B;
-
+    font-size: 24px;
+    margin-bottom: 40px;
+    color:rgba($color: #4E413B, $alpha: 0.7);
   }
   .textarea_text{
     display: block;
@@ -80,9 +88,12 @@ textarea{
     padding:10px;
   }
   .submit{
-    background-color: #4E413B;
+    font-size: 24px;
+    letter-spacing: 3px;
+    background-color: rgba($color: #4E413B, $alpha: 0.7);
     color:#fff;
-    padding:5px 15px;
+    padding:4px 26px;
+    margin-bottom: 30px;
     cursor: pointer;
     transition: all ,0.5s;
     &:hover{
@@ -91,12 +102,19 @@ textarea{
     }
   }
   .verification_code{
-       background-color: #4E413B;
+       background-color: rgba($color: #4E413B, $alpha: 0.7);
        color: #fff;
        padding: 6px 20px;
        position: absolute;
        right:15px;
        top:-2px
+  }
+  .remark {
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
+    font-size: 18px;
+    opacity: 0.3;
   }
 }
 
