@@ -31,29 +31,29 @@
                 padding-left: 15px;
 
                 .cht {
-                    font-size: 36px;
+                    @include font_size_3;
                     line-height: 36px;
                     letter-spacing: 7px;
                     margin-bottom: 10px;
                 }
                 .en {
-                    font-size: 24px;
+                    @include font_size_8;
                     line-height: 24px;
                     letter-spacing: 4px;
                 }
             }
             .slogan {
-                font-size: 30px;
+                @include font_size_5;
                 letter-spacing: 3px;
                 margin: 40px 0px;
             }
             .text {
-                font-size: 24px;
+                @include font_size_8;
                 letter-spacing: 1px;
                 margin-bottom: 55px;
             }
             .button {
-                font-size: 24px;
+                @include font_size_8;
                 letter-spacing: 2px;
                 color: #fff;
                 display: flex;
