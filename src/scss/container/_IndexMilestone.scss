@@ -14,10 +14,8 @@
         background-color: #4E413B;
 
         .image {
-            //先代替圖片
-            width: 560px;
-            height: 485px;
-            background-color: #000;
+            max-width: 560px;
+            width: 100%;
             margin-top: -110px;
         }
         .content {
