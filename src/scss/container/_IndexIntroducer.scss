@@ -97,21 +97,46 @@
     @include media-breakpoint-up(lg) {
       padding: 0px 60px;
     }
-
-    .exp_title {
+    .exp_title_wrap {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 175px;
-      height: 65px;
-      background-color: rgba($color: #4E413B, $alpha: 0.7);
       margin: 0px auto 35px auto;
-      @include font_size_4;
-      @include font_color_3;
       @include media-breakpoint-up(lg) {
         margin: 0px 0px 35px 0px;
       }
+
+      .exp_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 175px;
+        height: 65px;
+        background-color: rgba($color: #4E413B, $alpha: 0.7);
+        @include font_size_4;
+        @include font_color_3;
+        
+      }
+      hr {
+        display: none;
+        width: 82%;
+        height: 2px;
+        background-color: rgba($color: #828282, $alpha: 1.0);
+        @include media-breakpoint-up(lg) {
+          display: block;
+        }
+      }
+      .square {
+        display: none;
+        width: 13px;
+        height: 13px;
+        border: rgba($color: #828282, $alpha: 1.0) 2px solid;
+        @include media-breakpoint-up(lg) {
+          display: block;
+        }
+      }
     }
+    
     .exp_wrap {
       display: flex;
       flex-wrap: wrap;

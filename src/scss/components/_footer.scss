@@ -97,8 +97,7 @@ footer {
           width: 100%;
 
           .address {
-            //圖片有問題
-            padding-left: 40px;
+            padding-left: 54px;
             background: url(../images/icons/address_icon.png) left center no-repeat;
 
             .cht {
@@ -110,12 +109,14 @@ footer {
           }
 
           .contact {
-            padding-left: 40px;
+            padding-left: 54px;
+            background: url(../images/icons/phone_icon.png) left center no-repeat;
             font-size: 20px;
           }
 
           .email {
-            padding-left: 40px;
+            padding-left: 54px;
+            background: url(../images/icons/email_icon.png) left center no-repeat;
             
             .mail {
               font-size: 20px;
