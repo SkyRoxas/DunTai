@@ -1,0 +1,37 @@
+#slideshow_block {
+    max-width: 1920px;
+    position: relative;
+
+    &:hover {
+        .bx-controls-direction{
+            display: block;
+        }
+    }
+    .bx-caption {
+        display: none;
+    }
+
+    .bx-controls-direction {
+        display: none;
+        a {
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            width: 100px;
+            height: 100px;
+            font-size: 0px;
+            border-radius: 50%;
+
+            &.bx-prev {
+                left: 0px;
+                margin-left: 10px;
+                background: url(../images/icons/arrowLeft-primary.png) center center no-repeat;
+            }
+            &.bx-next {
+                right: 0px;
+                margin-right: 10px;
+                background: url(../images/icons/arrowRight-primary.png) center center no-repeat;
+            }
+        }            
+    }
+}
