@@ -24,7 +24,10 @@
         margin-top: -90px;
       }
       .content {
-        margin-left: 60px;
+        max-width: 875px;
+        width: 100%;
+        padding-left: 60px;
+        box-sizing: border-box;
 
         .block_title {
           border-left: #EA5717 4px solid;
@@ -59,7 +62,7 @@
         .text {
           @include font_size_7;
           @include font_color_2;
-          letter-spacing: 4px;
+          letter-spacing: 2px;
         }
       }
     }
