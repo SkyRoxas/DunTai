@@ -1,11 +1,17 @@
 #milestone_block{
-    background-color: #fff;
+    background: url(../images/milestone_bg.jpg) center center no-repeat;
+    background-size: cover;
     box-sizing: border-box;
-    padding: 275px 0px 210px 0px;
+    padding: 100px 0px 100px 0px;
     border-bottom: #4E413B 40px solid;
+    @include media-breakpoint-up(lg) {
+        padding: 275px 0px 210px 0px;
+    }
 
     .content_wrapper{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         max-width: 1370px;
         width: 100%;
         padding: 55px 45px;
@@ -19,14 +25,29 @@
             margin-top: -110px;
         }
         .content {
-            max-width: 670px;
+            max-width: 100%;
             width: 100%;
-            margin-left: 40px;
+            margin-top: 40px;
             color: #fff;
+            text-align: center;
+            @include media-breakpoint-up(lg) {
+                max-width: 670px;
+                margin-left: 40px;
+                margin-top: 0px;
+                text-align: left;
+            }
             
             .block_title {
-                border-left: #fff 4px solid;
-                padding-left: 15px;
+                display: inline-block;
+                border-bottom: #fff 4px solid;
+                padding-bottom: 15px;
+                @include media-breakpoint-up(lg) {
+                    display: block;
+                    border-left: #fff 4px solid;
+                    padding-left: 15px;
+                    border-bottom: 0px;
+                    padding-bottom: 0px;
+                }
 
                 .cht {
                     @include font_size_3;
@@ -60,6 +81,10 @@
                 width: 210px;
                 height: 50px;
                 border: #fff 1px solid;
+                margin: 0 auto;
+                @include media-breakpoint-up(lg) {
+                    margin: 0px;
+                }
             }
         }
     }

@@ -1,5 +1,4 @@
 .contact_bg {
-  //background-image: url("../images/home_07_contact_bg.png");
   background-color: #F2F0EC;
   padding:0px 15px;
   padding-top: 115px;
@@ -14,8 +13,8 @@ textarea{
   }
 }
 .contact_block{
-  // max-width: 1000px;
-  // margin:  0 auto;
+   max-width: 1170px;
+   margin:  0 auto;
   .block_title {
     color:#EA5717;
     margin-bottom: 20px;
@@ -49,14 +48,22 @@ textarea{
     margin-bottom: 60px;
   }
   .contact_form{
-    padding: 0px 120px;
+    max-width: 940px;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
 
 
     .col-md-6:nth-child(odd){
-      padding-right: 35px;
+      @include media-breakpoint-up(md) {
+        padding-right: 35px;
+      }
     }
     .col-md-6:nth-child(even){
-      padding-left: 35px;
+      @include media-breakpoint-up(md) {
+        padding-left: 35px;
+      }
     }
     input[type="text"],
     textarea{

@@ -6,14 +6,22 @@ footer {
 
   .content_wrapper {
     display: flex;
-    min-height: 290px;
-    padding: 70px 250px 65px 250px;
+    flex-wrap: wrap;
+    max-width: 1470px;
+    width: 100%;
+    padding: 20px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    @include media-breakpoint-up(lg) {
+      padding: 70px 20px;
+      flex-wrap: nowrap;
+    }
 
     .logo_wrapper {
       max-width: 330px;
       width: 100%;
+
       .logo {
-        // 暫時代替圖檔
         width: 213px;
         margin-left: 50px;
       }
@@ -24,24 +32,36 @@ footer {
       max-width: 1340px;
       width: 100%;
       text-align: left;
-      // line-height: 20px;
       position: relative;
 
       .row {
         width: 100%;
         margin: 0px;
+        justify-content: center;
+        text-align: center;
+        @include media-breakpoint-up(md) {
+          flex-wrap: nowrap;
+          text-align: left;
+        }
 
         > * {
           box-sizing: border-box;
-          padding: 0px 40px;
-          border-left: #fff 1px solid;
+          padding: 20px 0px;
+          border-top: #fff 1px solid;
+          @include media-breakpoint-up(md) {
+            border-left: #fff 1px solid;
+            border-top:0px;
+            padding: 0px 40px;
+          }
 
           .wrapper {
             margin: -8px 0;
 
             > * {
-              white-space: nowrap;
               padding: 8px 0;
+              @include media-breakpoint-up(md) {
+                white-space: nowrap;
+              }
             }
 
             .title {
@@ -73,12 +93,13 @@ footer {
         }
 
         .contact_us {
+          max-width: 533px;
+          width: 100%;
 
           .address {
-            //代替圖片
+            //圖片有問題
             padding-left: 40px;
-            //background-image: 
-            //background-position: left center;
+            background: url(../images/icons/address_icon.png) left center no-repeat;
 
             .cht {
               font-size: 20px;
@@ -125,10 +146,13 @@ footer {
       justify-content: center;
 
       .footer_menu {
-        display: flex;
+        display: none;
         margin: 0px;
         padding: 0px;
         list-style: none;
+        @include media-breakpoint-up(md) {
+          display: flex;
+        }
 
       .menu_item {
         padding: 20px 0px;
@@ -153,13 +177,18 @@ footer {
       list-style: none;
 
       .menu_item {
-        //暫時圖片代替
         width: 41px;
         height: 41px;
+        margin: 10px;
+        @include media-breakpoint-up(md) {
+          margin: 0px;
+        }
       }
 
       .fb {
-        margin: 0px 13px;
+        @include media-breakpoint-up(md) {
+          margin: 0px 13px;
+        }
       }
     }
     }

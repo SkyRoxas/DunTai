@@ -1,19 +1,29 @@
 #introduction_block {
-  padding-top: 180px;
-  padding-bottom: 135px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #F2F0EC;
+  @include media-breakpoint-up(lg) {
+    padding-top: 180px;
+    padding-bottom: 135px;
+  }
 
   .content_wrapper {
     max-width: 1370px;
     width: 100%;
     margin: 0px auto;
-    padding: 53px 105px;
+    padding: 20px;
     box-sizing: border-box;
-    background-color: #fff;
+    background: url(../images/introduction_bg.jpg) center center no-repeat;
+    background-size: cover;
     position: relative;
+    @include media-breakpoint-up(lg) {
+      padding: 53px 105px;
+    }
 
     .founder_wrapper {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       margin-bottom: 80px;
 
       .image {
@@ -22,16 +32,31 @@
         margin-top: -90px;
       }
       .content {
-        max-width: 875px;
+        max-width: 100%;
         width: 100%;
-        padding-left: 60px;
+        padding-top: 40px;
         box-sizing: border-box;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+          max-width: 665px;
+          text-align: left;
+          padding-left: 60px;
+          padding-top: 0px;
+        }
 
         .block_title {
-          border-left: #EA5717 4px solid;
-          padding-left: 15px;
+          display: inline-block;
+          border-bottom: #EA5717 4px solid;
+          padding-bottom: 15px;
           margin-bottom: 50px;
           @include main_color;
+          @include media-breakpoint-up(lg) {
+            display: block;
+            border-bottom: 0px;
+            border-left: #EA5717 4px solid;
+            padding-left: 15px;
+            padding-bottom: 0px;
+          }
 
           .cht {
               @include font_size_3;
@@ -67,8 +92,11 @@
   }
 
   .experience_wrapper {
-    padding: 0px 60px;
+    padding: 0px 20px;
     box-sizing: border-box;
+    @include media-breakpoint-up(lg) {
+      padding: 0px 60px;
+    }
 
     .exp_title {
       display: flex;
@@ -77,19 +105,37 @@
       width: 175px;
       height: 65px;
       background-color: rgba($color: #4E413B, $alpha: 0.7);
-      margin-bottom: 35px;
+      margin: 0px auto 35px auto;
       @include font_size_4;
       @include font_color_3;
+      @include media-breakpoint-up(lg) {
+        margin: 0px 0px 35px 0px;
+      }
     }
     .exp_wrap {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include media-breakpoint-up(lg) {
+        flex-wrap: nowrap;
+      }
 
       .exp {
-        flex-basis: 33%;
-        max-width: 33%;
-        border-right: rgba($color: #4E413B, $alpha: 0.7) 1px solid;
-        margin-right: 25px;
-        padding-right: 10px;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+          flex-basis: 33%;
+          max-width: 33%;
+          border-right: rgba($color: #4E413B, $alpha: 0.7) 1px solid;
+          margin-right: 25px;
+          padding-right: 10px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          text-align: left;
+        }
 
         &:last-child {
           border: 0px;

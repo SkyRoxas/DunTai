@@ -1,6 +1,9 @@
 #quality_block {
   background-color: #4E413B;
-  padding: 150px 0px 120px 0px;
+  padding: 50px 0px 60px 0px;
+  @include media-breakpoint-up(lg) {
+    padding: 150px 0px 120px 0px;
+  }
   
   .container{
     max-width: 1310px;
@@ -8,18 +11,39 @@
 
     .quality_wrapper {
       display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
       margin-bottom: 40px;
+      @include media-breakpoint-up(lg) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+      }
 
       .quality_content {
-        max-width: 700px;
+        max-width: 100%;
         width: 100%;
-        padding-right: 30px;
+        padding-top: 30px;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+          max-width: 700px;
+          padding-right: 30px;
+          padding-top: 0px;
+          text-align: left;
+        }
 
         .block_title {
-          border-left: #fff 4px solid;
-          padding-left: 15px;
+          display: inline-block;
+          border-bottom: #fff 4px solid;
+          padding-bottom: 15px;
           margin-bottom: 65px;
           @include font_color_3;
+          @include media-breakpoint-up(lg) {
+            display: block;
+            border-left: #fff 4px solid;
+            border-bottom: 0px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+          }
 
           .cht {
               @include font_size_3;
@@ -59,6 +83,11 @@
       .quality_image {
         max-width: 610px;
         width: 100%;
+        margin: 0 auto;
+        @include media-breakpoint-up (lg) {
+          max-width: 610px;
+          margin: 0px;
+        }
       }
     }
   }
@@ -72,10 +101,13 @@
       width: 130px;
       height: 53px;
       background-color: #827671;
-      margin-bottom: 60px;
+      margin:0px auto 60px auto;
       @include font_size_8;
       letter-spacing: 2px;
       @include font_color_3;
+      @include media-breakpoint-up(lg) {
+        margin:0px 0px 60px 0px;
+      }
     }
 
     .row {
@@ -100,25 +132,30 @@
           padding: 0;
 
           &.image {
-            position: relative;
             margin-bottom: 40px;
+            text-align: center;
 
-            img {
-              max-width: 276px;
-              width: 100%;
-            }
-            .number {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              width: 50px;
-              height: 50px;
-              @include font_size_8;
-              @include font_color_3;
-              background-color: #827671;
-              position: absolute;
-              top: 0;
-              left: 0;
+            .image_wrap {
+              display: inline-block;
+              position: relative;
+
+              img {
+                max-width: 276px;
+                width: 100%;
+              }
+              .number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                @include font_size_8;
+                @include font_color_3;
+                background-color: #827671;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
             }
           }
 
