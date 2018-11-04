@@ -1,4 +1,175 @@
-.block-news{
-  background-image: url("./../images/bg01.png");
+#news_block {
   background-color: #4E413B;
+
+  .news_wrap {
+    max-width: 1350px;
+    width: 100%;
+    padding: 110px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .first_news_row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 58px;
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+      }
+
+      .news_content_wrap {
+        width: 100%;
+        padding-bottom: 40px;
+        text-align: center;
+        @include media-breakpoint-up(lg) {
+          max-width: 700px;
+          text-align: left;
+          padding-right: 40px;
+          padding-bottom: 0px;
+        }
+
+        .block_title {
+          display: inline-block;
+          border-bottom: #fff 4px solid;
+          padding-bottom: 15px;
+          margin-bottom: 65px;
+          @include font_color_3;
+          @include media-breakpoint-up(lg) {
+            display: block;
+            border-left: #fff 4px solid;
+            border-bottom: 0px;
+            padding-left: 15px;
+            padding-bottom: 0px;
+          }
+
+          .cht {
+              @include font_size_3;
+              line-height: 36px;
+              letter-spacing: 4px;
+              margin-bottom: 10px;
+          }
+          .en {
+              @include font_size_8;
+              line-height: 24px;
+              letter-spacing: 4px;
+          }
+        }
+        .content_wrap {
+          position: relative;
+
+          .title {
+            margin-bottom: 25px;
+            @include media-breakpoint-up(md) {
+              margin-bottom: 50px;
+            }
+
+            a {
+              @include font_size_3;
+              @include font_color_3;
+              letter-spacing: 2px;
+            }
+          }
+          .date {
+            @include font_size_10;
+            color: rgba($color: #ffffff, $alpha: 0.5);
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            @include media-breakpoint-up(lg) {
+              @include font_size_3;
+              margin-bottom: 0px;
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+          }
+          .text {
+            @include font_size_9;
+            color: rgba($color: #ffffff, $alpha: 0.5);
+            letter-spacing: 2px;
+            line-height: 36px;
+            margin-bottom: 60px;
+          }
+          .read_more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 210px;
+            height: 50px;
+            border: #fff 1px solid;
+            margin: 0 auto;
+            @include media-breakpoint-up(lg) {
+              margin: 0px;
+            }
+
+            a {
+              @include font_size_8;
+              letter-spacing: 2px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .other_news_row {
+      overflow: hidden;
+      margin-bottom: 48px;
+
+      .other_news_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -22px;
+
+        .news_item {
+          flex-basis: 100%;
+          max-width: 100%;
+          padding: 22px;
+          @include media-breakpoint-up(md) {
+            flex-basis: 25%;
+            max-width: 25%;
+          }
+
+          .item_wrap {
+            max-width: 294px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 11px;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 0 auto;
+
+            .image {
+              margin-bottom: 20px;
+            }
+            .title {
+              margin-bottom: 25px;
+
+              a {
+                font-size: 21px;
+                @include font_color_2;
+              }
+            }
+            .date {
+              font-size: 13px;
+              @include font_color_2;
+            }
+          }
+        }
+      }
+    }
+    .read_more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 210px;
+      height: 50px;
+      border: #fff 1px solid;
+      margin: 0 auto;
+
+      a {
+        @include font_size_8;
+        letter-spacing: 2px;
+        color: #fff;
+      }
+    }
+  }
 }

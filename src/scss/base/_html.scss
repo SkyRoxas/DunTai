@@ -1,6 +1,11 @@
 body {
   padding-top: 100px;
   background-color: #ffffff;
+  @font-face {
+    font-family: SourceHanSerifTW;
+    src: url(../font/SourceHanSerifTW/SourceHanSerifTW-Medium.otf) format("opentype");
+  }
+  font-family: SourceHanSerifTW;
 }
 
 main {
