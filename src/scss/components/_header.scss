@@ -1,3 +1,47 @@
+#pc_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-top: -100px;
+  padding: 0px 285px;
+  box-sizing: border-box;
+  
+  .main_logo {
+    padding: 18px 0px;
+  }
+  .main_menu_wrapper {
+
+    ul.main_menu {
+      display: flex;
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    li.menu_item {
+      border-right: #4E413B 1px solid;
+      padding: 0px 25px;
+
+      &:last-child {
+        border: 0px;
+      }
+
+      a {
+        @include font_size_8;
+        line-height: 24px;
+        letter-spacing: 2px;
+        @include font_color_1;
+      }
+    }
+  }
+}
+
+
+header.mobile_header {
+  display: none;
+}
+
 header {
   nav {
     padding: 0;
