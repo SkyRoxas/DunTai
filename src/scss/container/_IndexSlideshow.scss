@@ -2,6 +2,48 @@
     max-width: 1920px;
     position: relative;
 
+    .slideshow_item {
+        position: relative;
+
+        .content_wrap {
+            display: none;
+            width: 100%;
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            @include media-breakpoint-up(md) {
+                display: block;
+            }
+
+            .content_item {
+                max-width: 1360px;
+                width: 100%;
+                background-color: rgba($color: #413D3B, $alpha: 0.8);
+                padding: 30px;
+                margin: 0 auto;
+
+                .content {
+                    border: #ffffff 1px solid;
+                    @include font_color_3;
+                    text-align: center;
+                    padding: 30px;
+                    box-sizing: border-box;
+
+                    .title {
+                        font-size: 42px;
+                        line-height: 42px;
+                        margin-bottom: 30px;
+                    }
+                    .text {
+                        @include font_size_9;
+                        line-height: 22px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
     &:hover {
         .bx-controls-direction{
             display: block;

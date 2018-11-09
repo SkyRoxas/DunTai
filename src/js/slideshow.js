@@ -6,6 +6,7 @@ $(function() {
         captions: true,
         adaptiveHeight: true,
         pager: false,
+        speed: 5000,
     });
     $(window).resize(() => {
         $('.bxslider').bxSlider('reloadSlider');

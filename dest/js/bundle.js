@@ -17026,7 +17026,8 @@ $(function () {
         mode: 'horizontal',
         captions: true,
         adaptiveHeight: true,
-        pager: false
+        pager: false,
+        speed: 5000
     });
     $(window).resize(function () {
         $('.bxslider').bxSlider('reloadSlider');
