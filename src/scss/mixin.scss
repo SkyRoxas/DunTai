@@ -69,4 +69,61 @@
   @mixin font_color_4 {
     color: #000;
   }
+
+  //此處為樣式mixin
+
+  //block title style 1
+
+  @mixin block-title-style-1($color,$cht,$en) {
+    display: inline-block;
+    color: $color;
+    border-bottom: $color 4px solid;
+    padding-bottom: 15px;
+    @include media-breakpoint-up(lg) {
+      display: block;
+      border-left: $color 4px solid;
+      padding-left: 15px;
+      border-bottom: 0px;
+      padding-bottom: 0px;
+    }
+
+    .cht {
+      font-size: $cht;
+      line-height: 36px;
+      letter-spacing: 7px;
+      margin-bottom: 10px;
+    }
+    .en {
+      font-size: $en;
+      line-height: 24px;
+      letter-spacing: 4px;
+    }
+  }
+
+  //block title style 2
+
+  @mixin block-title-style-2($color,$cht,$en) {
+    color: $color;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background-color: $color;
+      margin: 15px auto;
+    }
+
+    .cht {
+      font-size: $cht;
+      line-height: $cht;
+      letter-spacing: 7px;
+    }
+
+    .en {
+      font-size: $en;
+      letter-spacing: 4px;
+    }
+  }
   

@@ -1,0 +1,16 @@
+#about_banner_block {
+    border-bottom: #4E413B 40px solid;
+
+    .slogan {
+        @include font_color_3;
+        @include font_size_8;
+        text-align: center;
+        letter-spacing: 5px;
+        padding: 40px 10px;
+        box-sizing: border-box;
+        background-color: #4E413B;
+        @include media-breakpoint-up(md) {
+            font-size: 38px;
+        }
+    }
+}
