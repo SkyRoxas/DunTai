@@ -1,6 +1,6 @@
 #about_customer_block {
   background-color: #4E413B;
-  border-bottom: #ffffff 1px solid;
+  border-bottom: #ffffff 2px solid;
   
   .customer_wrapper {
     max-width: 955px;
@@ -34,14 +34,20 @@
     position: relative;
 
     .image_slogan {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       position: absolute;
       width: 100%;
-      text-align: center;
+      height: 100%;
+      padding: 30px 0px;
+      box-sizing: border-box;
+      background-color: rgba($color: #4E413B, $alpha: 0.7);
       @include font_size_3;
       @include font_color_3;
       letter-spacing: 5px;
       left: 0;
-      bottom: 30px;
+      bottom: 0px;
     }
   }
 }
