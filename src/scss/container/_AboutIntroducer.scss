@@ -23,7 +23,10 @@
       .fonder_image {
         max-width: 586px;
         width: 100%;
-        margin-right: 45px;
+        @include media-breakpoint-up(lg){
+          margin-right: 45px;
+
+        }
       }
       .fonder_content {
         max-width: 546px;

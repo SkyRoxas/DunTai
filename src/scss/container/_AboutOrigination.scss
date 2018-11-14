@@ -2,9 +2,13 @@
   max-width: 1920px;
   width: 100%;
   overflow: hidden;
-  padding: 180px 0px;
+  padding: 30px 0px;
   box-sizing: border-box;
   background-color: #ECEAE6;
+
+  @include media-breakpoint-up(md){
+    padding: 180px 0px;
+  }
   
   .origination_wrap {
     max-width: 1370px;
@@ -38,7 +42,6 @@
     .block_image {
       max-width: 596px;
       width: 100%;
-      height: 696px;
       margin: 10px auto;
       @include media-breakpoint-up(lg){
         margin: 0px;
@@ -87,7 +90,11 @@
       }
     }
     .origination_image {
-      padding-top: 630px;
+      padding-top: 40px;
+
+      @include media-breakpoint-up(lg) {
+        padding-top: 630px;
+      }
 
       .image-item {
         position: relative;
@@ -122,26 +129,33 @@
         }
 
         .item-1 {
-          height: 340px;
           width: 100%;
+          max-width: 443px;
           margin-bottom: 45px;
           @include media-breakpoint-up(md){
-            max-width: 443px;
             margin-bottom: 0px;
+          }
+
+          img {
+            height: 340px;
           }
         }
         .item-2 {
-          height: 340px;
+          max-width: 774px;
           width: 100%;
-          @include media-breakpoint-up(md){
-            max-width: 774px;
+
+          img {
+            height: 340px;
           }
         }
       }
       .item-3 {
         max-width: 1217px;
-        height: 340px;
         margin: 0 auto;
+
+        img {
+          height: 340px;
+        }
       }
     }
   }

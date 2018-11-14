@@ -34,7 +34,7 @@
     position: relative;
 
     .image_slogan {
-      display: flex;
+      display: none;
       justify-content: center;
       align-items: flex-end;
       position: absolute;
@@ -48,6 +48,10 @@
       letter-spacing: 5px;
       left: 0;
       bottom: 0px;
+
+      @include media-breakpoint-up(md) {
+        display: flex;
+      }
     }
   }
 }
