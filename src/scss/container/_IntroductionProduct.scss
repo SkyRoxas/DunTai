@@ -21,24 +21,36 @@
             @include font_size_5;
             @include font_color_3;
             letter-spacing: 3px;
-            white-space: nowrap;
+            white-space: wrap;
             margin-bottom: 70px;
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                white-space: nowrap;
+                text-align: left;
+            }
 
             &::before {
-                display: block;
+                display: none;
                 content: "";
                 width: 33%;
                 height: 1px;
                 background-color: rgba($color: #ffffff, $alpha: 0.5);
                 margin-right: 20px;
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
             }
             &::after {
-                display: block;
+                display: none;
                 content: "";
                 width: 33%;
                 height: 1px;
                 background-color: rgba($color: #ffffff, $alpha: 0.5);
-                margin-left: 20px;
+                margin-left: 20px;   
+                @include media-breakpoint-up(md) {
+                    display: block;
+                }
             }
         }
         .quality_product_wrapper {
