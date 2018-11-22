@@ -1,13 +1,36 @@
-//.introduction_sider_block
-  .container
-    h2.title.text-center.mb-5 世族品味  名家標準
-    .slideshow_wrapper.mb-5
+#introduction_slider_block.introduction_slider_block
+    .block_title
+        .cht 世族品味  名家標準 
+        .en Taste & Standard
+    .slideshow_wrapper
       .bxslider
-          a(href="/")
-              img(src='./images/introduction_sider.png')
-          a(href="/")
-              img(src='./images/introduction_sider.png')
-          a(href="/")
-              img(src='./images/introduction_sider.png')
-    p.text-center.h3 一邸之行，有石者運從自然造化，
-    p.text-center.h3 內外萬端，吉光者自如片羽燦燦。
+          a.slider_item(href="/")
+              img(src='./images/introduction_slide.jpg')
+              .image_content
+                .content_wrap
+                    .content
+                        .title  擁有貴族品味及愜意生活
+                        .text 陽光、空氣、水的好宅
+          a.slider_item(href="/")
+              img(src='./images/introduction_slide.jpg')
+              .image_content
+                .content_wrap
+                    .content
+                        .title 擁有貴族品味及愜意生活
+                        .text 陽光、空氣、水的好宅
+          a.slider_item(href="/")
+              img(src='./images/introduction_slide.jpg')
+              .image_content
+                .content_wrap
+                    .content
+                        .title 擁有貴族品味及愜意生活
+                        .text 陽光、空氣、水的好宅
+    .slideshow_images
+        .item_image.item_1
+            img(src="./images/introduction_slide1.jpg")
+        .item_image.item_2
+            img(src="./images/introduction_slide2.jpg")
+        .item_image.item_3
+            img(src="./images/introduction_slide3.jpg")
+        .item_image.item_4
+            img(src="./images/introduction_slide4.jpg")
