@@ -109,8 +109,12 @@
             .feature_item {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
+                margin: 20px 0px;
                 @include media-breakpoint-up(md) {
                     flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    margin: 0px;
                 }
 
                 .item_image {

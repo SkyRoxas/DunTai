@@ -16,9 +16,11 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: column-reverse;
+            align-items: center;
             @include media-breakpoint-up(lg) {
                 flex-wrap: nowrap;
                 flex-direction: row;
+                align-items: flex-start;
             }
 
             .content_wrapper {
