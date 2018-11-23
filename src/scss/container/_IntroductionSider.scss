@@ -55,8 +55,12 @@
     }
   }
   .slideshow_images {
-    display: flex;
+    display: none;
     border-top: #EA5717 15px solid;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+    }
     
     .item_image {
       display: flex;
