@@ -14,8 +14,13 @@
         }
     }
     .idea_block_wrap {
+        display: none;
         background: url(../images/about_banner_bg.jpg) center center no-repeat;
         background-size: cover;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
     }
     .idea_block {
         writing-mode: vertical-rl;
