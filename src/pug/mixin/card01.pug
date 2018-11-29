@@ -12,10 +12,8 @@ mixin card01(obj)
     .image
       a(href=obj.link)
        img(src=obj.image)
-    .wrap(class="px-5 py-3")
-      .title(class="mb-2")
-         h3.text-primary.font-weight-normal 
-           a.h4(href=obj.link) !{obj.title}
-      .date.text-primary(class="mb-3")
-         .small=obj.date
+    .wrap
+      .title
+          a(href=obj.link) !{obj.title}
+      .date=obj.date
           

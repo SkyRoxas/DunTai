@@ -1,23 +1,10 @@
-include ../../../mixin/menu
-
--
- var newsTab = {
-   type: 'tab',
-   activeIndex: 2,
-   items: [
-     {
-       name: '最新消息',
-       link: './newsCatgory1.html'
-     },
-     {
-       name: '公益資訊',
-       link: './newsCatgory2.html'
-     },
-     {
-       name: '建案進度',
-       link: './newsCatgory3.html'
-     }
-   ]
- }
-
-+menu(newsTab)
+#news_tab_menu
+  ul.tab
+    li.item 
+      a.item_link(href="newsCatgory1.html") 最新消息
+    li.item 
+      a.item_link(href="newsCatgory2.html") 公益資訊
+    li.item 
+      a.item_link.active(href="newsCatgory3.html") 建案進度
+  hr
+  .square

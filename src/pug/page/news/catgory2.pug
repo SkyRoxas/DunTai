@@ -7,11 +7,11 @@ block content
     
     include blocks/banner
     
-    .bg01.py-5
+    #news_list_page.news_list_page.py-5
         h1(style="display:none") 最新消息
-        h2.block-title(class="text-center mb-5 text-white") 最新消息
+        include blocks/first-content
         
-        .d-flex.justify-content-center
+        .news_tab_block.d-flex
           include blocks/tab2
         
         include blocks/news

@@ -151,6 +151,15 @@
             .date {
               font-size: 13px;
               @include font_color_2;
+
+              &::after {
+                content: "";
+                display: block;
+                width: 60px;
+                height: 2px;
+                background-color: rgba($color: #4E413B, $alpha: 0.7);
+                margin: 5px auto;
+              }
             }
           }
         }
