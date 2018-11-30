@@ -5,9 +5,10 @@ block head
 
 block content
     include blocks/banner.pug
-    .bg01(style="padding: 110px 0px;")
-        .container
+    #contact_page.contact_page
+        .contact_wrap
             include blocks/content.pug
+            include ../index/blocks/contact.pug
             
 
 
