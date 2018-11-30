@@ -5,3 +5,8 @@ block head
 
 block content
     h1(style="display:none") 敦泰里程
+    include blocks/banner.pug
+    #mileston_content.milestone_content
+        .milestone_content_wrapper
+            include blocks/title-block.pug
+            include blocks/milestone.pug
