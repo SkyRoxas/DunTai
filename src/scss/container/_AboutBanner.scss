@@ -23,11 +23,16 @@
         }
     }
     .idea_block {
+        display: none;
         writing-mode: vertical-rl;
         min-height: 503px;
         margin: 0 auto;
         padding: 60px 0px;
         color: #4E413B;
+        
+        @media screen and (min-width:1500px) {
+            display: block;
+        }
 
         .title {
             font-size: 38px;
