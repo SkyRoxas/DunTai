@@ -4,8 +4,9 @@ block head
     title 會員專區
 
 block content
-    .bg01(style="padding: 110px 0;")
+    #member_page
         h1(style="display:none") 會員專區
+        include blocks/banner.pug
         .container
             include blocks/login_form.pug
 

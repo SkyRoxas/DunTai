@@ -1,0 +1,14 @@
+.member_banner_block {
+    position: relative;
+
+    .banner_icon{
+        display: none;
+        position: absolute;
+        bottom: -60px;
+        left: 50%;
+        margin-left: -228px;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+}

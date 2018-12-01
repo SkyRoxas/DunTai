@@ -7,6 +7,7 @@ footer {
   .content_wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 1470px;
     width: 100%;
     padding: 20px 20px;
@@ -20,6 +21,7 @@ footer {
     .logo_wrapper {
       max-width: 330px;
       width: 100%;
+      margin-bottom: 30px;
 
       .logo {
         width: 213px;

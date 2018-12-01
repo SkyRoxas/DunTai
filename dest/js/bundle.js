@@ -10465,23 +10465,23 @@ window.addEventListener('load', function () {
   _aos2.default.init();
 });
 
-var footerFixed = function footerFixed() {
+// const footerFixed = () => {
 
-  var newDOM = document.createElement('div');
-  var footerDOM = document.getElementById('footer');
+//   let newDOM = document.createElement('div')
+//   let footerDOM = document.getElementById('footer')
 
-  footerDOM.style.width = '100%';
-  footerDOM.style.position = 'fixed';
-  footerDOM.style.bottom = '0';
+//   footerDOM.style.width = '100%'
+//   footerDOM.style.position = 'fixed'
+//   footerDOM.style.bottom = '0'
 
-  newDOM.style.height = footerDOM.offsetHeight + 'px';
+//   newDOM.style.height = `${footerDOM.offsetHeight}px`
 
-  window.addEventListener('resize', function () {
-    newDOM.style.height = footerDOM.offsetHeight + 'px';
-  });
+//   window.addEventListener('resize', () => {
+//     newDOM.style.height = `${footerDOM.offsetHeight}px`
+//   })
 
-  document.body.insertBefore(newDOM, document.getElementById('footer'));
-};
+//   document.body.insertBefore( newDOM, document.getElementById('footer'))
+// }
 
 window.addEventListener('load', function () {
   footerFixed();
