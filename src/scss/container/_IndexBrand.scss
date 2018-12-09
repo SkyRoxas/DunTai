@@ -1,10 +1,7 @@
 #brand_block {
-  padding: 50px 0px;
+  padding: 140px 0px;
   background-color: #F2F0EC;
   border-top: #4E413B 40px solid;
-  @include media-breakpoint-up(lg) {
-    padding: 140px 0px;
-  }
 
   .brand_wrapper {
     display: flex;
@@ -21,20 +18,25 @@
         position: relative;
 
         &::after {
-          display: none;
           content: url(../images/brand_icon.png);
           width:251px;
           height: 214px;
           position: absolute;
-          bottom: -107px;
-          margin-left: -25px;
+          top: -107px;
           @include media-breakpoint-up(lg) {
             display: block;
+            top: 0px;
+            bottom: -107px;
+            margin-left: -25px;
           }
         }
         .content_wrapper {
           background: url(../images/brand_bg1.jpg) center center;
           background-size: cover;
+          padding-top: 135px;
+          @include media-breakpoint-up(lg) {
+            padding-top: 30px;
+          }
         }
       }
       &.row2{

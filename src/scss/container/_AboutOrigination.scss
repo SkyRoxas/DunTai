@@ -98,6 +98,17 @@
 
       .image-item {
         position: relative;
+        overflow: hidden;
+        transition: all 0.5s;
+        //cursor: pointer;
+
+        &:hover {
+
+          .image_title {
+            margin: 0px;
+          }
+
+        }
 
         .image_title {
           position: absolute;
@@ -109,9 +120,12 @@
           height: 100%;
           background-color: rgba($color: #000000, $alpha: 0.5);
           @include block-title-style-2(#ffffff,30px,24px);
-          margin: 0px;
+          margin-bottom: 0px;
           left: 0;
           bottom: 0;
+          @include media-breakpoint-up(sm) {
+            margin-bottom: -340px;
+          }
 
           .cht span {
             @include font_size_3;

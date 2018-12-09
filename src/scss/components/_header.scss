@@ -53,6 +53,7 @@
 
 .mobile_header {
   display: block;
+  box-shadow: 0px 5px 5px rgba(20%,20%,40%,0.3);
   @include media-breakpoint-up(lg) {
     display: none;
   }
@@ -64,11 +65,12 @@ header {
     position: relative;
     display: flex;
     align-items: center;
+    background-color: #ffffff;
 
     button {
       padding: 0;
       border: none;
-      margin-right: 45px;
+      margin-left: auto;
       cursor: pointer;
 
       &:focus {
@@ -110,7 +112,7 @@ header {
   .menu_wrapper {
     overflow-y: scroll;
     width: 100%;
-    max-width: 400px;
+    max-width: 480px;
     text-align: center;
     background-color: #EA5717;
     padding: 48px 0;
