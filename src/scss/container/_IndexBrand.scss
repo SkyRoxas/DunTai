@@ -1,37 +1,75 @@
+
+$output-gutter: 96px;
+
 #brand_block {
   padding: 140px 0px;
+
+  @include media-breakpoint-down(md){
+    padding: 120px 0;
+  }
   background-color: #F2F0EC;
   border-top: #4E413B 40px solid;
 
   .brand_wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1320px;
+    // max-width: 1320px;
     margin: 0px auto;
+    // padding: 0 $output-gutter;
 
     .item_row {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+
+      @include media-breakpoint-down(md){
+        flex-wrap: wrap;
+      }
+
+      .content_wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        max-width: 635px;
+        padding: 0px;
+
+        @include media-breakpoint-down(md){
+          padding: 0 15px;
+        }
+
+        .content {
+          width: 100%;
+          @include media-breakpoint-down(lg){
+            padding: 30px 10px;
+          }
+        }
+      }
+      
 
       &.row1{
         position: relative;
 
         &::after {
-          content: url(../images/brand_icon.png);
-          width:251px;
-          height: 214px;
+          content: '';
+          background-image: url('../images/brand_icon.png');
+          background-size: 100%;
+          width:251px * 0.7;
+          height: 214px * 0.7;
           position: absolute;
-          top: -107px;
+          transform: translateY(-50%);
           @include media-breakpoint-up(lg) {
             display: block;
-            top: unset;
-            bottom: -107px;
-            margin-left: -25px;
+            width:251px;
+            height: 214px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, -50%);
           }
         }
-        .content_wrapper {
-          background: url(../images/brand_bg1.jpg) center center;
+
+        .content {
+          background: url(../images/brand_bg1.jpg) no-repeat center center;
           background-size: cover;
           padding-top: 135px;
           @include media-breakpoint-up(lg) {
@@ -40,34 +78,24 @@
         }
       }
       &.row2{
-        .content_wrapper {
-          background: url(../images/brand_bg2.jpg) center center;
+        .content {
+          background: url(../images/brand_bg2.jpg) no-repeat center center;
           background-size: cover;
         }
       }
       &.row3{
-        .content_wrapper {
-          background: url(../images/brand_bg3.jpg) center center;
+        .content {
+          background: url(../images/brand_bg3.jpg) no-repeat center center;
           background-size: cover;
-        }
-      }
-      
-      .content_wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 685px;
-        width: 100%;
-        text-align: center;
-        padding: 30px 10px;
-        box-sizing: border-box;
-        @include media-breakpoint-up(lg) {
-          max-width: 635px;
-          padding: 0px;
         }
       }
 
       .content {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .title {
           @include font_size_1;
@@ -95,7 +123,7 @@
           letter-spacing: 5px;
           margin-bottom: 20px;
         }
-        .content {
+        .field-content {
           @include font_size_6;
           letter-spacing: 3px;
           color: #827671;
@@ -107,12 +135,40 @@
         width: 100%;
       }
     }
-    .row2 {
+  
 
-      @include media-breakpoint-up(lg) {
-        flex-direction: row-reverse;
-        margin-right: 48px;
-        margin-left: -48px;
+    .row1, .row3 {
+      padding-left: $output-gutter / 2;
+      box-sizing: border-box;
+
+      @include media-breakpoint-down(md){
+        padding: 0px;
+      }
+    }
+
+    .row2 {
+      padding-right: $output-gutter / 2;
+      box-sizing: border-box;
+      flex-direction: row-reverse;
+
+      @include media-breakpoint-down(md){
+        padding: 0px;
+        flex-direction: row;
+      }
+    }
+
+    .content-wrapper{
+      width: 55%;
+
+      @include media-breakpoint-down(md){
+        width: 100%;
+      }
+    }
+    .image{
+      width: 45%;
+
+      @include media-breakpoint-down(md){
+        width: 100%;
       }
     }
   }
