@@ -65,3 +65,18 @@ a.btn-radius, .btn-radius {
   border:2px solid #EA5717;
   padding:10px 30px;
 }
+
+// banner
+
+.pc_banner {
+  display: block;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
+.m_banner {
+  display: none;
+  @media screen and (max-width: 780px) {
+    display: block;
+  }
+}
