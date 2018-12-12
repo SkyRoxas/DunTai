@@ -2,7 +2,7 @@
     max-width: 1920px;
     width: 100%;
     overflow: hidden;
-    padding: 30px 0px;
+    padding: 30px;
     box-sizing: border-box;
     background-color: #F2F0EC;
 
@@ -17,7 +17,7 @@
         position: relative;
         background-size: cover;
         text-align: center;
-        padding: 15px;
+        padding: 30px 15px;
         margin: 0 auto;
         box-sizing: border-box;
         @include media-breakpoint-up(lg) {
@@ -38,7 +38,6 @@
         }
         .block_image {
             max-width: 596px;
-            width: 100%;
             margin: 10px auto;
             @include media-breakpoint-up(lg){
                 margin: 0px;
@@ -46,9 +45,14 @@
                 top: -43px;
                 z-index: 3;
             }
+            @media screen and (max-width: 480px) {
+                margin-left: -30px;
+                margin-right: -30px;
+                margin-bottom: 0px;
+              }
         }
         .architecture_content {
-            padding: 30px 10px;
+            padding: 30px;
             background-color: #EA5717;
             @include media-breakpoint-up(lg){
                 display: flex;
@@ -62,6 +66,10 @@
             @include media-breakpoint-up(md){
             padding: 35px 110px;
             }
+            @media screen and (max-width: 480px) {
+                margin-left: -15px;
+                margin-right: -15px;
+              }
 
             .content_wrap {
                 width: 100%;
@@ -72,18 +80,26 @@
                 .slogan {
                     @include font_size_3;
                     @include font_color_3;
-                    margin-bottom: 25px;
-                    line-height: 60px;
+                    margin-bottom: 15px;
+                    line-height: 30px;
                     letter-spacing: 3px;
+                    @include media-breakpoint-up(sm) {
+                        line-height: 60px;
+                        margin-bottom: 25px;
+                    }
                 }
                 .content {
                     width: 100%;
                     letter-spacing: 2px;
                     @include font_size_6;
                     color: rgba($color: #ffffff, $alpha: 0.7);
-                    line-height: 44px;
+                    line-height: 34px;
                     @include media-breakpoint-up(lg){
                         max-width: 495px;
+                    }
+                    @include media-breakpoint-up(sm) {
+                        line-height: 44px;
+                        margin-bottom: 25px;
                     }
 
                     p {
@@ -100,10 +116,12 @@
         .architecture_feature_wrapper {
             width: 100%;
             margin-top: 50px;
-            border: #EA5717 1px solid;
             @include media-breakpoint-up(lg) {
                 max-width: 1180px;
                 margin-top: 640px;
+            }
+            @include media-breakpoint-up(md) {
+                border: #EA5717 1px solid;
             }
 
             .feature_item {
@@ -118,6 +136,10 @@
                 }
 
                 .item_image {
+                    @media screen and (max-width: 480px) {
+                        margin-left: -30px;
+                        margin-right: -30px;
+                      }
 
                     img {
                         width: 100%;
@@ -139,13 +161,21 @@
                     .item_title {
                         @include font_size_3;
                         @include main_color;
-                        line-height: 56px;
-                        margin-bottom: 20px;
+                        line-height: 36px;
+                        margin: 20px 0px;
+                        @include media-breakpoint-up(sm) {
+                            line-height: 56px;
+                            margin-top: 0px;
+                        }
                     }
                     .item_content {
                         @include font_size_8;
                         color: #827671;
-                        line-height: 44px;
+                        line-height: 30px;
+                        @include media-breakpoint-up(sm) {
+                            line-height: 44px;
+                            margin-top: 0px;
+                        }
                     }
                 }
             }

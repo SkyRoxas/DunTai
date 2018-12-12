@@ -3,9 +3,13 @@
 
   .block_title {
     @include block-title-style-2(#EA5717,36px,24px);
-    padding: 55px 0px;
+    padding: 30px 0px;
     margin: 0px;
-    border-bottom: #EA5717 15px solid;
+    border-bottom: #EA5717 3px solid;
+    @include media-breakpoint-up(sm) {
+      padding: 55px 0px;
+      border-bottom: #EA5717 15px solid;
+    }
   }
   .slideshow_wrapper {
 
@@ -55,15 +59,10 @@
     }
   }
   .slideshow_images {
-    display: none;
-    border-top: #EA5717 15px solid;
-
-    @include media-breakpoint-up(md) {
-      display: flex;
-    }
-    
-    .item_image {
-      display: flex;
+    border-top: #EA5717 3px solid;
+    display: flex;
+    @include media-breakpoint-up(sm) {
+      border-bottom: #EA5717 15px solid;
     }
   }
 }
