@@ -5,6 +5,7 @@
   padding: 30px 0;
   box-sizing: border-box;
   background-color: #F2F0EC;
+
   @include media-breakpoint-up(lg) {
     padding: 180px 0;
   }
@@ -19,6 +20,7 @@
     padding: 15px;
     margin: 0 auto;
     box-sizing: border-box;
+
     @include media-breakpoint-up(lg) {
       text-align: left;
       padding: 70px;
@@ -26,8 +28,9 @@
 
     .block_title {
       display: inline-block;
-      @include block-title-style-1(#EA5717,36px,24px);
+      @include block-title-style-1(#EA5717, 36px, 24px);
       margin-bottom: 20px;
+
       @include media-breakpoint-up(lg) {
         position: absolute;
         top: 47px;
@@ -40,6 +43,7 @@
       max-width: 700px;
       width: 100%;
       margin: 0 auto;
+
       @include media-breakpoint-up(lg) {
         margin: 0;
         position: absolute;
@@ -53,6 +57,7 @@
       background-color: #EA5717;
       max-width: 680px;
       margin: 0 auto;
+
       @include media-breakpoint-up(lg) {
         display: flex;
         justify-content: flex-end;
@@ -62,12 +67,14 @@
         top: 153px;
         z-index: 2;
       }
+
       @include media-breakpoint-up(lg) {
         padding: 95px 110px;
       }
 
       .content_wrap {
         width: 100%;
+
         @include media-breakpoint-up(lg) {
           max-width: 475px;
         }
@@ -78,8 +85,9 @@
           margin-bottom: 25px;
           line-height: 60px;
           letter-spacing: 3px;
+
           @include media-breakpoint-up(lg) {
-             @include font_size_3;
+            @include font_size_3;
           }
         }
 
@@ -89,6 +97,7 @@
           font-size: $font_size_8;
           color: rgba($color: #ffffff, $alpha: 0.7);
           line-height: 44px;
+
           @include media-breakpoint-up(lg) {
             max-width: 495px;
             @include font_size_6;
@@ -110,19 +119,23 @@
       flex-wrap: wrap;
       justify-content: center;
       margin-top: 20px;
+
       @include media-breakpoint-up(lg) {
         flex-wrap: nowrap;
       }
+
       @include media-breakpoint-up(lg) {
         margin-top: 670px;
       }
 
       .features_content_wrap {
+        margin: 20px auto 95px;
+        max-width: 450px;
         width: 100%;
-        margin: 30px;
         padding: 20px 10px;
         border: #EA5717 1px solid;
         text-align: center;
+
         @include media-breakpoint-up(lg) {
           max-width: 478px;
           margin: 20px 80px 20px 20px;
@@ -135,6 +148,7 @@
           @include font_size_3;
           @include font_color_3;
           background-color: #EA5717;
+
           @include media-breakpoint-up(lg) {
             width: 130%;
             margin-left: -15%;
@@ -159,6 +173,7 @@
       max-width: 450px;
       border: #EA5717 1px solid;
       padding: 20px 30px;
+
       @include media-breakpoint-up(lg) {
         max-width: none;
       }
@@ -168,6 +183,7 @@
         align-items: center;
         justify-content: center;
         margin: 20px auto 60px;
+
         @include media-breakpoint-up(lg) {
           margin: 65px 0 60px;
         }
@@ -181,8 +197,11 @@
           @include font_size_3;
           letter-spacing: 2px;
           @include font_color_3;
-          padding: 20px 40px;
+          padding: 20px;
+
           @include media-breakpoint-up(md) {
+            padding: 20px 40px;
+
             white-space: nowrap;
           }
         }
@@ -192,6 +211,7 @@
           width: 60%;
           height: 1px;
           background-color: rgba($color: #EA5717, $alpha: 1.0);
+
           @include media-breakpoint-up(lg) {
             display: block;
           }
@@ -202,6 +222,7 @@
           width: 13px;
           height: 13px;
           border: rgba($color: #EA5717, $alpha: 1.0) 2px solid;
+
           @include media-breakpoint-up(lg) {
             display: block;
           }
@@ -222,11 +243,13 @@
           flex-basis: 100%;
           max-width: 100%;
           padding: 18px;
-          @include media-breakpoint-up(sm) {
-            flex-basis: 50%;
-            max-width: 50%;
-          }
+
           @include media-breakpoint-up(md) {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+
+          @include media-breakpoint-up(lg) {
             flex-basis: 25%;
             max-width: 25%;
           }
@@ -252,6 +275,7 @@
               @include font_color_3;
               letter-spacing: 3px;
               background-color: #827671;
+
               @include media-breakpoint-up(lg) {
                 max-width: 242px;
                 position: absolute;
@@ -279,6 +303,7 @@
 
     .construction_banner {
       margin-bottom: 50px;
+
       @include media-breakpoint-up(lg) {
         width: 111.2%;
         margin-left: -5.6%;
@@ -290,6 +315,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+
       @include media-breakpoint-up(lg) {
         flex-wrap: nowrap;
       }
@@ -298,6 +324,7 @@
         margin: 30px 0;
         border: #EA5717 1px solid;
         position: relative;
+
         @include media-breakpoint-up(lg) {
           max-width: 635px;
           margin: 0 60px 0 30px;
@@ -310,6 +337,8 @@
           color: #ffffff;
           @include font_size_3;
           letter-spacing: 3px;
+          margin: 20px auto 25px;
+
           @include media-breakpoint-up(lg) {
             position: absolute;
             top: -51px;
@@ -323,9 +352,12 @@
           color: #827671;
           padding: 0 45px;
           margin-top: 35px;
+          margin-bottom: 20px;
           box-sizing: border-box;
+
           @include media-breakpoint-up(lg) {
             margin-top: 100px;
+            margin-bottom: 0;
           }
         }
 
@@ -351,6 +383,7 @@
           padding: 30px 15px;
           box-sizing: border-box;
           background-color: #827671;
+
           @include media-breakpoint-up(md) {
             padding: 15px;
           }
@@ -361,6 +394,7 @@
             flex-direction: column;
             font-size: 14px;
             padding: 4px 0;
+
             @include media-breakpoint-up(sm) {
               flex-direction: row;
             }
@@ -372,6 +406,7 @@
               color: #827671;
               margin-left: 15px;
               margin-right: 15px;
+
               @include media-breakpoint-up(md) {
                 margin-left: 30px;
                 margin-right: 15px;
@@ -381,6 +416,7 @@
             .text {
               color: #ffffff;
               margin: 15px 0;
+
               @include media-breakpoint-up(sm) {
                 margin: 0;
               }
