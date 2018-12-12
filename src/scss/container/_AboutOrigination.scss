@@ -17,12 +17,13 @@
     background: url(../images/about_origination_bg.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 15px;
+    padding: 20px 30px;
     margin: 0 auto;
     box-sizing: border-box;
     @include media-breakpoint-up(lg) {
       text-align: left;
       padding: 70px;
+      padding: 20px 15px;
     }
 
     .block_title{
@@ -37,12 +38,15 @@
       }
       .cht span {
         font-size: 42px;
+        @include media-breakpoint-down(sm){
+          font-size: 42px * 0.6;
+        }
       }
     }
     .block_image {
       max-width: 596px;
       width: 100%;
-      margin: 10px auto;
+      margin: 0px auto;
       @include media-breakpoint-up(lg){
         margin: 0px;
         position: absolute;
@@ -51,7 +55,7 @@
       }
     }
     .origination_content {
-      padding: 30px 10px;
+      padding: 20px 25px;
       background-color: #EA5717;
       @include media-breakpoint-up(lg){
         display: flex;
@@ -76,7 +80,10 @@
         .slogan {
           @include font_size_5;
           margin-bottom: 35px;
-          line-height: 50px;
+          line-height: 38px;
+          @include media-breakpoint-up(sm) {
+            line-height: 50px;
+          }
         }
         .content {
           width: 100%;
@@ -99,36 +106,90 @@
       .image-item {
         position: relative;
         overflow: hidden;
-        transition: all 0.5s;
-        //cursor: pointer;
+        height: 340px;
 
         &:hover {
-
-          .image_title {
-            margin: 0px;
+          .image_content_wrapper {
+            margin-top: -340px;
           }
-
         }
 
-        .image_title {
-          position: absolute;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
+        .image_item_wrapper {
+          position: relative;
+          overflow: hidden;
+
+          .image_title {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            @include block-title-style-2(#ffffff,30px,24px);
+            margin-bottom: 0px;
+            left: 0;
+            bottom: 0;
+  
+            .cht span {
+              @include font_size_3;
+            }
+          }
+        }
+        .image_content_wrapper {
+          display: none;
           width: 100%;
-          height: 100%;
-          background-color: rgba($color: #000000, $alpha: 0.5);
-          @include block-title-style-2(#ffffff,30px,24px);
-          margin-bottom: 0px;
-          left: 0;
-          bottom: 0;
-          @include media-breakpoint-up(sm) {
-            margin-bottom: -340px;
+          height: 340px;
+          background-color: #EA5717;
+          color: #ffffff;
+          padding: 30px 20px 30px 45px;
+          box-sizing: border-box;
+          position: relative;
+          z-index: 10;
+
+          @include media-breakpoint-up(lg) {
+            display: block;
           }
 
-          .cht span {
-            @include font_size_3;
+          .title {
+            @include font_size_5;
+            letter-spacing: 2px;
+            margin-left: 10px;
+
+            span {
+              @include font_size_10;
+            }
+          }
+          .line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            hr {
+              display: none;
+              width: 100%;
+              height: 1px;
+              background-color: rgba($color: #ffffff, $alpha: 1.0);
+              @include media-breakpoint-up(lg) {
+                display: block;
+              }
+            }
+            .square {
+              display: none;
+              width: 13px;
+              height: 13px;
+              border: rgba($color: #ffffff, $alpha: 1.0) 1px solid;
+              @include media-breakpoint-up(lg) {
+                display: block;
+              }
+            }
+          }
+          .content {
+            @include font_size_9;
+            letter-spacing: 2px;
+            line-height: 42px;
+            margin-left: 10px;
           }
         }
       }

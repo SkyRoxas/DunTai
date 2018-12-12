@@ -137,14 +137,24 @@ $font_size_12: 12px;
 
   .cht {
     font-size: $cht;
-    line-height: 36px;
+    line-height: $cht;
     letter-spacing: 7px;
     margin-bottom: 10px;
+    @include media-breakpoint-down(sm){
+      font-size: $cht * 0.6;
+      line-height: $cht * 0.6;
+      margin-bottom: 5px;
+      letter-spacing: 4px;
+    }
   }
   .en {
     font-size: $en;
     line-height: 24px;
     letter-spacing: 4px;
+    @include media-breakpoint-down(sm){
+      font-size: $en * 0.6;
+      letter-spacing: 1px;
+    }
   }
 }
 
@@ -168,10 +178,17 @@ $font_size_12: 12px;
     font-size: $cht;
     line-height: $cht;
     letter-spacing: 7px;
+    @include media-breakpoint-down(sm){
+      font-size: $cht * 0.6;
+      line-height: $cht * 0.6;
+    }
   }
 
   .en {
     font-size: $en;
     letter-spacing: 4px;
+    @include media-breakpoint-down(sm){
+      font-size: $en * 0.6;
+    }
   }
 }

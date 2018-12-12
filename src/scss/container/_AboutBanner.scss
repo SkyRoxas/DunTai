@@ -1,5 +1,8 @@
 #about_banner_block {
-    border-bottom: #4E413B 40px solid;
+    border-bottom: #4E413B 10px solid;
+    @include media-breakpoint-up(sm) {
+        border-bottom: #4E413B 40px solid; 
+    }
 
     .slogan {
         @include font_color_3;

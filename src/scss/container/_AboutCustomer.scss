@@ -21,13 +21,23 @@
     .slogan {
       @include font_color_3;
       @include font_size_5;
-      line-height: 50px;
-      margin-top: 45px;
-      margin-bottom: 35px;
+      line-height: 30px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(sm) {
+        line-height: 50px;
+        margin-top: 45px;
+        margin-bottom: 35px;
+      }
     }
     .content {
       color: rgba($color: #ffffff, $alpha: 0.7);
       @include font_size_7;
+      padding: 0px 35px;
+      line-height: 30px;
+      @include media-breakpoint-up(sm) {
+        padding: 0px;
+      }
     }
   }
   .customer_image {
