@@ -16,7 +16,7 @@
           .field_wrap.border_b_color
              label 性別：
              input#male(type="radio", name="gender", value="male" checked) 
-             label(for="male") 男
+             label.mr-2(for="male") 男
              input#female(type="radio", name="gender", value="female") 
              label(for="female") 女 
         .col-md-6
@@ -31,14 +31,14 @@
           .field_wrap.border_b_color
              label(for="subject") 主旨：
              input#subject.w_80(type="text")
-        .col-md-6
+        .col-md-6.d-flex
           .field_wrap.border_b_color
              label(for="verification") 驗證碼：
-             input#verification(type="text") 
-             span.verification_code VIVK
+             input#verification.w_80(type="text")
              span.remark (點選驗證碼可更新)
+          .verification_code.d-flex.align-items-center VIVK
         .col-12
-          .field_wrap
+          .field_wrap.d-block
             label#textarea_text.textarea_text(for="textarea") 您的意見：
             textarea#textarea(name="", cols="30", rows="10")
         .col-12.text-center

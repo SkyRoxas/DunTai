@@ -2,6 +2,11 @@
   background-color: #F2F0EC;
   padding:0px 15px;
   padding-top: 115px;
+
+  @include media-breakpoint-down(md){
+  padding-top: 65px;
+    
+  }
 }
 .w_80{
   width: 80%;
@@ -32,18 +37,29 @@ textarea{
       font-size: 36px;
       line-height: 36px;
       letter-spacing: 7px;
+      @include media-breakpoint-down(md){
+        font-size: 25px;
+      }
     }
 
     .en {
       font-size: 24px;
       letter-spacing: 4px;
+
+      @include media-breakpoint-down(md){
+        font-size: 15px;
+      }
     }
   }
   p.sub_title{
     color:#4E413B;
     font-size: 30px;
-    padding-top: 35px;
     padding-bottom: 65px;
+    @include media-breakpoint-down(md){
+      font-size: 18px;
+      padding-bottom: 35px;
+    }
+    padding-top: 35px;
     border-bottom: 1px solid #4E413B;
     margin-bottom: 60px;
   }
@@ -54,6 +70,10 @@ textarea{
     margin: 0 auto;
     box-sizing: border-box;
 
+
+    .col-md-6{
+      margin-bottom: 40px;
+    }
 
     .col-md-6:nth-child(odd){
       @include media-breakpoint-up(md) {
@@ -73,6 +93,9 @@ textarea{
     input{
       border:0px;
     }
+    label{
+      white-space: nowrap;
+    }
     input[name="gender"] {
       margin-right:5px;
       margin-left: 5px;
@@ -83,8 +106,14 @@ textarea{
   }
   .field_wrap{
     font-size: 24px;
-    margin-bottom: 40px;
+
+    @include media-breakpoint-down(md){
+      font-size: 16px;
+    }
+    // margin-bottom: 40px;
     color:rgba($color: #4E413B, $alpha: 0.7);
+    display: flex;
+    align-items: center;
   }
   .textarea_text{
     display: block;
@@ -100,6 +129,7 @@ textarea{
     background-color: rgba($color: #4E413B, $alpha: 0.7);
     color:#fff;
     padding:4px 26px;
+    margin-top: 20px;
     margin-bottom: 30px;
     cursor: pointer;
     transition: all ,0.5s;
@@ -112,15 +142,20 @@ textarea{
        background-color: rgba($color: #4E413B, $alpha: 0.7);
        color: #fff;
        padding: 6px 20px;
-       position: absolute;
-       right:15px;
-       top:-2px
+      //  position: absolute;
+      //  right:15px;
+      //  top:-2px
   }
   .remark {
     position: absolute;
     left: 35px;
-    bottom: 10px;
+    top: 100%;
     font-size: 18px;
+    @include media-breakpoint-down(md){
+      left: 0;
+      padding-left: 15px;
+      font-size: 15px;
+    }
     opacity: 0.3;
   }
 }
