@@ -72,7 +72,7 @@ footer {
 
             .title {
               .cht {
-                font-size: 26px;
+                font-size: 22px;
                 letter-spacing: 7px;
               }
               .en {
@@ -89,11 +89,21 @@ footer {
 
           .slogan {
             font-size: 26px;
+
+            @include media-breakpoint-down(md){
+              font-size: 20px;
+            }
+
             letter-spacing: 4px;
           }
 
           .content {
             font-size: 22px;
+
+            @include media-breakpoint-down(md){
+              font-size: 16px;
+            }
+
             letter-spacing: 2px;
           }
         }
@@ -109,15 +119,20 @@ footer {
             @include media-breakpoint-up(sm) {
               margin-top: 0px;
               padding-top: 0px;
-              padding-left: 44px;
+              padding-left: 54px;
               background: url(../images/icons/address_icon.png) left center no-repeat;
             }
 
             .cht {
-              font-size: 20px;
+              font-size: 18px;
+              margin-bottom: 5px;
             }
             .en {
               font-size: 12px;
+              @include media-breakpoint-down(md){
+                max-width: 180px;
+                margin: 0 auto;
+              }
             }
           }
 
@@ -131,6 +146,10 @@ footer {
               padding-top: 0px;
               padding-left: 54px;
               background: url(../images/icons/phone_icon.png) left center no-repeat;
+            }
+
+            @include media-breakpoint-down(md){
+              font-size: 16px;
             }
           }
 
