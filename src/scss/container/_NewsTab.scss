@@ -24,7 +24,7 @@
             }
             
             a {
-                font-size: 24px;
+                @include font_size_8;
                 color: #827671;
                 padding: 15px 22px;
                 letter-spacing: 3px;
