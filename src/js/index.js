@@ -33,6 +33,6 @@ window.addEventListener('load', () => {
 //   document.body.insertBefore( newDOM, document.getElementById('footer'))
 // }
 
-window.addEventListener('load', () => {
-  footerFixed()
-})
+// window.addEventListener('load', () => {
+//   footerFixed()
+// })
