@@ -23,7 +23,7 @@
     @include media-breakpoint-up(lg) {
       text-align: left;
       padding: 70px;
-      padding: 20px 15px;
+      //padding: 20px 15px;
     }
 
     .block_title{
@@ -45,7 +45,7 @@
     }
     .block_image {
       max-width: 596px;
-      margin: 0px auto;
+      margin: 20px auto;
       @include media-breakpoint-up(lg){
         margin: 0px;
         position: absolute;
@@ -53,6 +53,7 @@
         z-index: 3;
       }
       @media screen and (max-width: 480px) {
+        margin: 0 auto;
         margin-left: -45px;
         margin-right: -45px;
       }
@@ -122,6 +123,7 @@
         &:hover {
           .image_content_wrapper {
             margin-top: -340px;
+            transition: all 0.5s;
           }
         }
 

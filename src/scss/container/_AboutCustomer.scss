@@ -37,6 +37,7 @@
       line-height: 30px;
       @include media-breakpoint-up(sm) {
         padding: 0px;
+        line-height: 50px;
       }
     }
   }
