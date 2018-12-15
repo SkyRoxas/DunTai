@@ -66,6 +66,7 @@
         position: absolute;
         top: 153px;
         z-index: 2;
+        max-width: none;
       }
 
       @include media-breakpoint-up(lg) {
