@@ -8,6 +8,7 @@
   const browserSync = require('browser-sync').create()
   const imagemin = require('gulp-imagemin')
   const pug = require('gulp-pug')
+  const plumber = require('gulp-plumber')
 
   const config = {
     src: {
@@ -25,11 +26,11 @@
   }
 
   const minifyJS = function() {
-    return gulp.src(config.src.js).pipe(webpack(require('./webpack.config.js'))).pipe(gulp.dest(config.dest.js)).pipe(browserSync.reload({stream: true, once: true}))
+    return gulp.src(config.src.js).pipe(plumber()).pipe(webpack(require('./webpack.config.js'))).pipe(gulp.dest(config.dest.js)).pipe(browserSync.reload({stream: true, once: true}))
   }
 
   const minifySASS = function() {
-    return gulp.src(config.src.sass).pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)).pipe(gulp.dest(config.dest.sass)).pipe(browserSync.stream())
+    return gulp.src(config.src.sass).pipe(plumber()).pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)).pipe(gulp.dest(config.dest.sass)).pipe(browserSync.stream())
   }
 
   const minifyHTML = function() {
