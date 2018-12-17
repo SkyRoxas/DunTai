@@ -24,7 +24,7 @@
 
       .news_content_wrap {
         width: 100%;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
         text-align: center;
 
         @include media-breakpoint-up(lg) {
@@ -151,23 +151,29 @@
       .other_news_wrap {
         display: flex;
         flex-wrap: wrap;
-        margin: -22px;
+
+        @include media-breakpoint-up(lg) {
+          margin: -22px;
+        }
 
         .news_item {
-          flex-basis: 100%;
-          max-width: 100%;
-          padding: 22px;
+          flex-basis: 50%;
+          max-width: 50%;
+          padding: 12px;
           @include media-breakpoint-up(sm) {
             flex-basis: 50%;
             max-width: 50%;
+            padding: 22px;
           }
           @include media-breakpoint-up(md) {
             flex-basis: 25%;
             max-width: 25%;
+            padding: 22px;
           }
           @include media-breakpoint-up(lg) {
             flex-basis: 25%;
             max-width: 25%;
+            padding: 22px;
           }
 
           .item_wrap {
@@ -188,6 +194,11 @@
 
               a {
                 font-size: 21px;
+
+                @include media-breakpoint-down(md){
+                  font-size: 15px;
+                }
+                
                 @include font_color_2;
               }
             }

@@ -17,6 +17,7 @@
             flex-wrap: wrap;
             flex-direction: column-reverse;
             align-items: center;
+
             @include media-breakpoint-up(lg) {
                 flex-wrap: nowrap;
                 flex-direction: row;
@@ -28,6 +29,7 @@
                 width: 100%;
                 box-sizing: border-box;
                 margin-top: 30px;
+
                 @include media-breakpoint-up(lg) {
                     text-align: left;
                     max-width: 700px;
@@ -36,15 +38,20 @@
                 }
 
                 .block_title {
-                    @include block-title-style-1(#ffffff,36px,24px);
-                    margin-bottom: 65px;
+                    @include block-title-style-1(#ffffff, 36px, 24px);
+                    margin-bottom: 22px;
+                    @include media-breakpoint-up(lg){
+                        margin-bottom: 65px;
+                    }
                 }
+
                 .slogan {
                     margin-bottom: 40px;
                     @include font_size_3;
                     @include font_color_3;
                     letter-spacing: 3px;
                 }
+
                 .content {
                     @include font_size_9;
                     color: rgba($color: #ffffff, $alpha: 0.5);
@@ -53,8 +60,10 @@
                 }
 
             }
+
             .content_image {
                 width: 100%;
+
                 @include media-breakpoint-up(lg) {
                     max-width: 610px;
                 }
@@ -64,47 +73,54 @@
                 }
             }
         }
+
         .about_story {
-            
+
             .story_title {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 65px auto 60px auto;
+                margin: 20px;
+
                 @include media-breakpoint-up(lg) {
-                  margin: 65px 0px 60px 0px;
+                    margin: 65px 0px 60px 0px;
                 }
-          
+
                 .title {
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  width: 135px;
-                  height: 53px;
-                  background-color: #827671;
-                  @include font_size_8;
-                  letter-spacing: 2px;
-                  @include font_color_3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 135px;
+                    height: 53px;
+                    background-color: #827671;
+                    @include font_size_8;
+                    letter-spacing: 2px;
+                    @include font_color_3;
                 }
+
                 hr {
-                  display: none;
-                  width: 89%;
-                  height: 1px;
-                  background-color: rgba($color: #828282, $alpha: 1.0);
-                  @include media-breakpoint-up(lg) {
-                    display: block;
-                  }
+                    display: none;
+                    width: 89%;
+                    height: 1px;
+                    background-color: rgba($color: #828282, $alpha: 1.0);
+
+                    @include media-breakpoint-up(lg) {
+                        display: block;
+                    }
                 }
+
                 .square {
-                  display: none;
-                  width: 13px;
-                  height: 13px;
-                  border: rgba($color: #828282, $alpha: 1.0) 2px solid;
-                  @include media-breakpoint-up(lg) {
-                    display: block;
-                  }
+                    display: none;
+                    width: 13px;
+                    height: 13px;
+                    border: rgba($color: #828282, $alpha: 1.0) 2px solid;
+
+                    @include media-breakpoint-up(lg) {
+                        display: block;
+                    }
                 }
             }
+
             .story_content {
                 padding: 0px 20px;
                 box-sizing: border-box;
@@ -114,7 +130,11 @@
 
                 p {
                     line-height: 40px;
-                    padding: 20px 0px;
+                    padding: 10px 0px;
+
+                    @include media-breakpoint-up(lg) {
+                        padding: 20px 0px;
+                    }
                 }
             }
         }
